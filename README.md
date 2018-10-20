@@ -1,10 +1,12 @@
 # DataTables inline editing using jEditable  
-My aim is to enable inline editing functionality in [DataTables](https://datatables.net/). When I googled for `editing in DataTables` I had found DataTables [Editor](https://editor.datatables.net/) supports the editing feature on the fly but since it is a commercial plugin I was unable to use it in my project   
-So I go with [jEditable](https://www.appelsiini.net/projects/jeditable) which is a jquery-plugin for in-cell editing
+One of my project requirement was to enable inline editing functionality in [DataTables](https://datatables.net/) but all I found was DataTables [Editor](https://editor.datatables.net/) supports the editing feature on the fly but it is a commercial plugin because of that I had to implement my own in-house solution to use the similar feature in my project.
+
+So I quickly checked [jEditable](https://www.appelsiini.net/projects/jeditable) which is a jquery-plugin for in-cell editing
 It is nicely integrated with DataTables to enable the desired behaviour
 
 So lets dig down into implementation  
-## Here are the steps I've taken to implement the similar behaviour
+
+## Here are the steps to implement the similar behaviour as DataTables Editor
 
 * Draw DataTables 
     * With static `columns` and `ajax` sourced data
@@ -35,7 +37,7 @@ So lets dig down into implementation
     * On button click send the edited rows data to server side using service call  
     * Re draw the datatable with updated changes on service call success
 
-## Check the code for implementation details. 
+## Check out the code for implementation details. 
 
 # Demo
-Feel free to play in [jsfiddle](https://jsfiddle.net/gangadharjannu/b382c9z4/6/)
+Feel free to play in [JSFiddle](https://jsfiddle.net/gangadharjannu/b382c9z4/8/)
